@@ -2,7 +2,8 @@
 
 :root {
     --primary-color: #0065FC;
-    --secondary-color: #F2F2F2;
+    --secondaty-color: #DEEBFF;
+    --tertiary-color: #F2F2F2;
     --background-color: white;
 
     --popular-card-img-height: 130px;
@@ -90,7 +91,7 @@ a.current {
     display: block;
     width: var(--popular-card-img-height);
     height: 3px;
-    background-color: var(--secondary-color);
+    background-color: var(--tertiary-color);
     position: absolute;
     top: 0px;
 }
@@ -132,12 +133,12 @@ a.current {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: var(--secondary-color);
+    background-color: var(--tertiary-color);
     border-radius: 15px 0 0 15px;
 }
 
 .city-form .form-input input {
-    border: 1px solid var(--secondary-color);
+    border: 1px solid var(--tertiary-color);
     padding: 0 15px;
     font-weight: bold;
     font-size: 16px;
@@ -146,7 +147,7 @@ a.current {
 }
 
 .city-form :focus-visible {
-    outline: 2px solid var(--secondary-color);
+    outline: 2px solid var(--tertiary-color);
 }
 
 .city-form .form-button button {
@@ -170,7 +171,7 @@ a.current {
     height: 50px;
     padding: 0 20px;
     background-color: white;
-    border: 2px solid var(--secondary-color);
+    border: 2px solid var(--tertiary-color);
     border-radius: 25px;
     font-weight: bold;
     font-size: 16px;
@@ -188,8 +189,8 @@ a.current {
     justify-content: center;
     align-items: center;
     color: var(--primary-color);
-    background-color: rgb(203, 230, 255);
-    border: 1px solid rgb(203, 230, 255);
+    background-color: var(--secondaty-color);
+    border: 1px solid var(--secondaty-color);
     height: 50px;
     width: 50px;
     border-radius: 25px;
@@ -208,7 +209,7 @@ a.current {
 
 #home .filters .filter-infos i {
     color: var(--primary-color);
-    border: 1px solid var(--secondary-color);
+    border: 1px solid var(--tertiary-color);
     padding: 10px 15px;
     border-radius: 20px;
     margin-right: 20px;
@@ -242,7 +243,7 @@ main {
 
 #hosts,
 #popular {
-    background-color: var(--secondary-color);
+    background-color: var(--tertiary-color);
     border-radius: 20px;
     margin: 2% 0;
 }
@@ -318,7 +319,7 @@ main {
 }
 
 .card .stars .grey {
-    color: var(--secondary-color);
+    color: var(--tertiary-color);
 }
 
 /* -- HOSTS -- */
@@ -403,16 +404,6 @@ main {
     justify-content: center;
 }
 
-/* block of 4 card (1 maxi & 2 mini) 
-forced to raw without wrap in desktop / tablet */
-#activities .row {
-    flex: 50%;
-    min-width: 450px;
-    display: flex;
-    flex-wrap: nowrap;
-    flex-direction: row;
-}
-
 #activities .card {
     flex-direction: column;
     overflow: hidden;
@@ -423,6 +414,16 @@ forced to raw without wrap in desktop / tablet */
     object-fit: cover;
     overflow: hidden;
     border-radius: 15px 15px 0 0;
+}
+
+/* block of 4 card (1 maxi & 2 mini) 
+forced to raw without wrap in desktop / tablet */
+#activities .row {
+    flex: 50%;
+    min-width: 450px;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
 }
 
 #activities .maxi,
@@ -459,7 +460,7 @@ forced to raw without wrap in desktop / tablet */
 
 footer nav {
     margin: 0;
-    background-color: var(--secondary-color);
+    background-color: var(--tertiary-color);
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -506,6 +507,10 @@ footer a {
     }
 
     /* --- MAIN ACTIVITIES --- */
+
+    #activities .row {
+        flex: 100%;
+    }
 
     #activities .card img {
         flex: 45%;
