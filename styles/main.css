@@ -384,6 +384,7 @@ main {
     width: 100%;
     min-height: var(--popular-card-img-height);
     height: var(--popular-card-img-height);
+    flex: 1;
 }
 
 #popular .card .picture {
@@ -498,8 +499,7 @@ footer a {
     }
 
     #hosts .card {
-        /* 50% (1/2) - 1% *2 (padding) - 2% *2 (margin-main) */
-        flex: 45%;
+        flex: 30%;
     }
 
     /* --- MAIN POPULAR --- */
@@ -629,6 +629,10 @@ footer a {
     }
 
     /* --- MAIN POPULAR --- */
+
+    #popular .card {
+        flex: 100%;
+    }
 
     /* --- MAIN ACTIVITIES --- */
 
