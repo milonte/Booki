@@ -238,14 +238,15 @@ main {
 #activities {
     display: flex;
     flex-wrap: wrap;
-    padding: 1%;
+    margin: 30px 0;
+
 }
 
 #hosts,
 #popular {
     background-color: var(--tertiary-color);
     border-radius: 20px;
-    margin: 2% 0;
+    padding: 30px 20px;
 }
 
 .title {
@@ -253,7 +254,8 @@ main {
     font-weight: bolder;
     align-self: flex-start;
     align-items: center;
-    padding: 0 3%;
+    padding: 0 20px;
+    font-size: 16px;
 }
 
 .price {
@@ -269,7 +271,7 @@ main {
     overflow: hidden;
     box-shadow: 1px 1px 5px 5px rgba(0, 0, 0, .1);
     padding: 5px;
-    margin: 15px;
+    margin: 20px;
     transition: box-shadow .1s ease-out .05s, transform .1s ease-out .05s;
 }
 
@@ -350,7 +352,7 @@ main {
     padding-left: 20px;
     text-align: left;
     flex: 100%;
-    margin: 2% 0;
+    margin: 20px 0;
     transition: color .1s ease-out .05s;
 }
 
@@ -370,6 +372,10 @@ main {
 #popular .title {
     display: flex;
     justify-content: space-between;
+}
+
+#popular .title i {
+    font-size: 25px;
 }
 
 #popular .card {
@@ -606,7 +612,7 @@ footer a {
         flex: 100%;
         margin: 0;
         border-radius: 0;
-        padding: 2%;
+        padding: 30px 10px;
     }
 
     /* --- MAIN HOSTS --- */
