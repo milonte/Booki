@@ -294,19 +294,20 @@ main {
 
 .card h3 {
     font-weight: bolder;
-    font-size: 18px;
+    font-size: 17px;
     max-height: 80px;
 }
 
 .card p {
     font-weight: normal;
-    font-size: 15px;
+    font-size: 14px;
+    padding-top: 5px;
 }
 
 .card .infos {
     display: flex;
     flex-direction: column;
-    padding: 10px;
+    padding: 15px 10px;
     margin: 0;
     background-color: var(--background-color);
     justify-content: space-between;
@@ -322,7 +323,7 @@ main {
 }
 
 .card .stars .grey {
-    color: var(--tertiary-color);
+    color: rgba(0, 0, 0, .2);
 }
 
 /* -- HOSTS -- */
@@ -347,7 +348,7 @@ main {
 }
 
 #hosts .card .infos {
-    height: 100px;
+    height: 90px;
 }
 
 .hosts-link {
@@ -428,6 +429,11 @@ main {
     border-radius: 15px 15px 0 0;
 }
 
+#activities .card .infos {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
 /* block of 4 card (1 maxi & 2 mini) 
 forced to raw without wrap in desktop / tablet */
 #activities .row {
@@ -459,13 +465,13 @@ forced to raw without wrap in desktop / tablet */
 }
 
 #activities .mini .card .picture img {
-    /* 200px (card) - 50px (infos) */
+    /* 200px (card) - 60px (infos) */
     height: 140px;
     vertical-align: middle;
 }
 
 #activities .infos {
-    height: 50px;
+    height: 60px;
     justify-content: center;
 }
 
@@ -603,7 +609,7 @@ footer a {
 
     main {
         margin: 0;
-        padding: 0 10px;
+        padding: 0;
     }
 
     .card {
