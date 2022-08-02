@@ -484,10 +484,13 @@ footer nav {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: flex-start;
-    gap: 15%;
     justify-items: center;
     height: auto;
     padding: 50px;
+}
+
+footer nav .col {
+    flex: 33.33%;
 }
 
 footer a {
