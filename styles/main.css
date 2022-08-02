@@ -82,7 +82,7 @@ nav img {
     width: var(--popular-card-img-height);
 }
 
-a.current {
+a:hover {
     color: var(--primary-color);
 }
 
@@ -96,7 +96,7 @@ a.current {
     top: 0px;
 }
 
-.nav-link a.current::before {
+.nav-link a:hover::before {
     background-color: var(--primary-color);
 }
 
